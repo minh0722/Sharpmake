@@ -104,3 +104,6 @@ open for development.
 - solution.ClassName - Solution Class Name, ex: "MySolution"
 - solution.SharpmakeCsFileName - File name of the c# project configuration, ex: "MyProject.cs"
 - solution.SharpmakeCsPath - Path of the CsFileName, ex: "c:\dev\MyProject"
+
+### Configuration - located at Sharpmake/Project.Configuration.cs
+- string TargetFileFullName = "[conf.TargetFilePrefix][conf.TargetFileName][conf.TargetFileSuffix]" - the name of the output of the project
