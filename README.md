@@ -97,3 +97,10 @@ open for development.
 - project.SourceFilesFiltersRegex - Filters SourceFiles list
 - project.SourceFilesExcludeRegex - Sources file that match this regex will be excluded from build
 - project.SourceFilesBuildExclude - Sources file to exclude from build from SourceFiles
+
+
+### Solution - located at Sharpmake/Solution.cs
+- solution.Name
+- solution.ClassName - Solution Class Name, ex: "MySolution"
+- solution.SharpmakeCsFileName - File name of the c# project configuration, ex: "MyProject.cs"
+- solution.SharpmakeCsPath - Path of the CsFileName, ex: "c:\dev\MyProject"
