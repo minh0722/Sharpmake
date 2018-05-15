@@ -78,3 +78,22 @@ the platform is open and that you are not breaking your NDA. Ubisoft has not
 published platform support for most video game consoles for that exact reason.
 We will not accept merge requests for new platforms that are not completely
 open for development.
+
+
+## Some important sharpmake attributes
+
+### Project - located at Sharpmake/Project.cs
+- project.Name
+- project.SharpmakeCsFileName - File name of the c# project configuration, ex: "MyProject.sharpmake"
+- project.SharpmakeCsPath - Path of the CsFileName, ex: "c:\dev\MyProject"
+- project.SourceRootPath - Root path of source file for this project, ex: "c:\dev\MyProject\src"
+- project.RootPath - RootPath used as key to generate ProjectGuid and as a path helper for finding source files
+- project.AdditionalSourceRootPaths - More source directories to parse for files in addition to SourceRootPath
+- project.SourceFiles - Files in the project, may be full path of partial path from SourceRootPath
+- project.SourceFilesCompileExtensions - File that match this regex compile
+- project.SourceFilesFilters - if !=  null, include only file in this filter
+- project.SourceFilesExclude - Excluded files from the project, removed from SourceFiles
+- project.SourceFilesIncludeRegex - files that match SourceFilesIncludeRegex and SourceFilesExtension from source directory will make SourceFiles
+- project.SourceFilesFiltersRegex - Filters SourceFiles list
+- project.SourceFilesExcludeRegex - Sources file that match this regex will be excluded from build
+- project.SourceFilesBuildExclude - Sources file to exclude from build from SourceFiles
